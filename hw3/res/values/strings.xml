@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ZARA</string>
+    <string name="header">Product Details</string>
+    <string name="productName">Leather Jacket</string>
+    <string name="productSize">Size</string>
+    <string name="productFeatures">Relaxed fit jacket made of faux leather fabric. Collar detail, long sleeves with buttoned cuffs. Hip pockets and inside pockets.</string>
+    <string name="price">80$</string>
+    <string name="sizeS">S</string>
+    <string name="sizeM">M</string>
+    <string name="sizeL">L</string>
+    <string name="sizeXL">XL</string>
+    <string name="button">Add To Chart</string>
+
+</resources>
