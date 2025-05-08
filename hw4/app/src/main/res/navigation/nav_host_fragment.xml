@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host_fragment"
+    app:startDestination="@id/homepageFragment">
+
+    <fragment
+        android:id="@+id/homepageFragment"
+        android:name="com.example.hw4.HomepageFragment"
+        android:label="fragment_homepage"
+        tools:layout="@layout/fragment_homepage" >
+        <action
+            android:id="@+id/gecis_a"
+            app:destination="@id/pageaFragment" />
+        <action
+            android:id="@+id/gecis_x"
+            app:destination="@id/pagexFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageaFragment"
+        android:name="com.example.hw4.PageaFragment"
+        android:label="fragment_pagea"
+        tools:layout="@layout/fragment_pagea" >
+        <action
+            android:id="@+id/gecis_b"
+            app:destination="@id/pagebFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagebFragment"
+        android:name="com.example.hw4.PagebFragment"
+        android:label="fragment_pageb"
+        tools:layout="@layout/fragment_pageb" >
+        <action
+            android:id="@+id/gecis_b_y"
+            app:destination="@id/pageyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagexFragment"
+        android:name="com.example.hw4.PagexFragment"
+        android:label="fragment_pagex"
+        tools:layout="@layout/fragment_pagex" >
+        <action
+            android:id="@+id/gecis_x_y"
+            app:destination="@id/pageyFragment"
+            app:popUpTo="@id/homepageFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageyFragment"
+        android:name="com.example.hw4.PageyFragment"
+        android:label="fragment_pagey"
+        tools:layout="@layout/fragment_pagey" />
+</navigation>
